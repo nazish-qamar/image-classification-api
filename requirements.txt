@@ -1,0 +1,9 @@
+
+
+
+
+
+tensorflow
+matplotlib
+flask
+flasgger
