@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Aug 29 12:54:23 2021
 
-@author: nazish
-"""
 from tensorflow.keras.datasets import mnist
 import matplotlib. pyplot as plt
 import numpy
