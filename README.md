@@ -5,6 +5,7 @@ Image classification API using Tensorflow and Flask. The API takes a picture of 
 #### 1. Building and training a CNN model using Tensorflow and Keras libraries.
 #### 2. Providing a web API interface for deploying the trained model using Flask and testing in Flasgger web client.
 
+
 ## Files Information
 ### 1. image_recognition_train.py
 #### The main file for constructing a CNN network and training it over MNIST data set. The trained model is saved for later to be used by the web API
@@ -12,7 +13,7 @@ Image classification API using Tensorflow and Flask. The API takes a picture of 
 ### 2. image_recognition_test.py
 #### Contains the decorator for flask API which performs the tasks for predicting the image class.
 
-### 6. requirements.txt
+### 3. requirements.txt
 #### The file contains the list of all the required libraries
 
 
