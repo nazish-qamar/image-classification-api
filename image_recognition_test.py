@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Aug 29 18:34:54 2021
-
-@author: nazish
-"""
 
 # # For Genrating test images
 # from PIL import Image
