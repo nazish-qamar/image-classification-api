@@ -5,6 +5,15 @@ Created on Sun Aug 29 12:54:23 2021
 
 @author: nazish
 """
+from tensorflow.keras.datasets import mnist
+import matplotlib. pyplot as plt
+import numpy
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.python.keras.layers.convolutional import Conv2D, MaxPooling2D
+from tensorflow.python.keras.utils import np_utils
+from tensorflow.keras import backend as K
+
 # # For Genrating test images
 # from PIL import Image
 # from tensorflow.keras.datasets import mnist
@@ -15,8 +24,6 @@ Created on Sun Aug 29 12:54:23 2021
 #     arr2im = Image.fromarray(X_train[i])
 #     arr2im.save('test_images/{}.png'.format(i), "PNG")
 
-from tensorflow.keras.datasets import mnist
-import matplotlib. pyplot as plt
 
 # Load dataset (download if needed)
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
@@ -32,12 +39,7 @@ plt.imshow(X_train[3], cmap=plt.get_cmap('gray'))
 
 plt.show()
 
-import numpy
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Flatten
-from tensorflow.python.keras.layers.convolutional import Conv2D, MaxPooling2D
-from tensorflow.python.keras.utils import np_utils
-from tensorflow.keras import backend as K
+
 K.set_image_data_format('channels_last')
 
 # fix the seed 
@@ -81,36 +83,6 @@ model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=3,
 
 model.save('model.h5')
 
-# Final eval
+# Final evaluation
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("CNN error: %.2f%%" % (100 - scores[1]*100))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
