@@ -22,4 +22,4 @@ Image classification API using Tensorflow and Flask. The API takes a picture of 
 ####    python image_recognition_test.py 
 #### 3. The project will start and a link will be displayed in the terminal.
 #### 4. Click on the link. When the browser opens up, write '/apidocs' after hit enter to and open the URL and run flasgger interface.
-#### e.g., the final URL will be like- 'http://127.0.0.1:5000/apidocs'
+#### e.g., if the URL generated is 'http://127.0.0.1:5000', then the final URL will be 'http://127.0.0.1:5000/apidocs'
