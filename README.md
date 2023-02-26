@@ -3,7 +3,7 @@ Image classification API using Tensorflow and Flask. The API takes a picture of 
 
 ### Features:
 #### 1. Building and training a CNN model using Tensorflow - Keras libraries.
-#### 2. Providing an API interface for deploying the trained model using Flask and testing in Flasgger web client.
+#### 2. Deploying the trained model as a flask based REST API and testing in Flasgger web client.
 
 
 ## Files Information
@@ -22,5 +22,5 @@ Image classification API using Tensorflow and Flask. The API takes a picture of 
 #### 2. Run the following command in the terminal
 ####    python image_recognition_test.py 
 #### 3. The project will start and a link will be displayed in the terminal.
-#### 4. Click on the link. When the browser opens up, write '/apidocs' after hit enter to and open the URL and run flasgger interface.
+#### 4. Click on the link. When the browser opens up, write '/apidocs' after hit enter to and open the URL and run flasgger UI.
 #### e.g., if the URL generated is 'http://127.0.0.1:5000', then the final URL will be 'http://127.0.0.1:5000/apidocs'
