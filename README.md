@@ -2,7 +2,7 @@
 Image classification API using Tensorflow and Flask. The API takes a picture of a digit as an input and predicts the digit class.
 
 ### Features:
-#### 1. Building and training a CNN model using Tensorflow and Keras libraries.
+#### 1. Building and training a CNN model using Tensorflow - Keras libraries.
 #### 2. Providing an API interface for deploying the trained model using Flask and testing in Flasgger web client.
 
 
