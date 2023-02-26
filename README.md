@@ -8,7 +8,7 @@ Image classification API using Tensorflow and Flask. The API takes a picture of 
 
 ## Files Information
 ### 1. image_recognition_train.py
-#### The main file for constructing a CNN network and training it over MNIST data set. The trained model is saved for later to be used by the web API
+#### The main file for constructing a CNN network and training it over MNIST data set. The trained model is saved for later to be used by the prediction API
 
 ### 2. image_recognition_test.py
 #### Contains the decorator for flask API which performs the tasks for predicting the image class.
