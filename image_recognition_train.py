@@ -1,25 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from tensorflow.keras.datasets import mnist
+from keras.datasets import mnist
 import matplotlib. pyplot as plt
 import numpy
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Flatten
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Flatten
 from tensorflow.python.keras.layers.convolutional import Conv2D, MaxPooling2D
 from tensorflow.python.keras.utils import np_utils
-from tensorflow.keras import backend as K
-
-# # For Genrating test images
-# from PIL import Image
-# from tensorflow.keras.datasets import mnist
-# import numpy as np
-
-# (X_train, y_train), (X_test, y_test) = mnist.load_data()
-# for i in np.random.randint(0, 10000+1, 10):
-#     arr2im = Image.fromarray(X_train[i])
-#     arr2im.save('test_images/{}.png'.format(i), "PNG")
-
+from keras import backend as K
 
 # Load dataset (download if needed)
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
